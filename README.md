@@ -74,6 +74,3 @@ open ```index.html``` file from prediction folder. it will open webcam and start
 
 ![Figure](https://github.com/forhadsidhu/Yoga-pose-detection/blob/master/Images/pred.PNG)
 
-
-
-# :smile: Happy ~~Coding~~ Contributing :two_hearts::two_hearts::two_hearts::two_hearts::two_hearts::two_hearts::two_hearts:
