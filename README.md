@@ -1,24 +1,18 @@
 # Yoga Pose Detection (PoseNet)
-This project is based on the pose estimation model
-[PoseNet](https://github.com/tensorflow/tfjs-models/tree/master/posenet), [ml5js](https://ml5js.org/getting-started/hello-ml5) and [KNN classifier model](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm#:~:text=In%20pattern%20recognition%2C%20the%20k,examples%20in%20the%20feature%20space.&text=In%20k%2DNN%20classification%2C%20the%20output%20is%20a%20class%20membership.)
 
+This project utilizes computer vision and machine learning techniques to detect and classify yoga poses in real-time using a webcam. It provides an interactive and visual way for yoga practitioners to receive real-time feedback on their poses.
 
-![Figure](https://github.com/forhadsidhu/Yoga-pose-detection/blob/master/Images/Yoga.jpg)
+## Features
 
-
-
-Currently this system gives around 75% accuracy which can be improve by gathering more data and retrain and fine-tune with different classifier model.The uniqueness of the project in data preparation process which is user friendly and can be inference in real-time with browser.i trained the model with 7 (seven) yoga-pose data ('Tadasana','Urdhva Hastasana','Uttanasana','Ardha Uttanasana','Chaturanga','Urdhva Mukha Svanasana','Adho Mukha Svanasana'
-).If you have any query  please contact me via [E-mail](md.sharif.ullah.forhad@gmail.com)
-
+- Real-time pose detection and classification using computer vision techniques
+- Supports multiple yoga poses, including Downward Dog, Warrior Pose, Tree Pose, etc.
+- Webcam integration for capturing live video
+- Visual feedback on the detected pose, including key body joints and angles
+- Pose classification accuracy and confidence level display
 
 ## Basic Theory
 
-Pose estimation is a hot topic now-a-days. It is being used in video-surveillance system to sport analysis tasks. Some of the classical problem can be solved using pose estimation like: person count in a frame, fall detection, smart fitness tracking app etc. Basicly by using pose estimation we can observe the movement of human and take any decision. Before of deep learning arena [HoG](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf) and [SIFT](http://www.scholarpedia.org/article/Scale_Invariant_Feature_Transform) based approach used in feature extraction. But because of CNN these feature extraction process become more accurate using lots of data. 
-
-<p align="center">
-  <img width="600" height="500" src="https://github.com/forhadsidhu/Yoga-pose-detection/blob/master/Images/posenet.gif">
-</p>
-
+Yoga pose estimation is the detection and recognition of specific yoga poses performed by a person using computer vision techniques. Practising yoga can improve flexibility, strength, and overall physical fitness, while also promoting relaxation and reducing stress levels. The goal of the project is to help common people practice yoga poses with proper posture and body alignment on their own, in order to prevent serious injuries that can be caused by practising yoga asanas with incorrect body alignment in the long run. Getting feedback on the correctness of the yoga posture can have huge benefits in learning and practising the yoga asanas. The project is an implementation of OpenCV and Mediapipe libraries. OpenCV is an open-source computer vision library that provides a wide range of functions for image and video processing. MediaPipe is a cross-platform, high-fidelity body pose tracking solution framework, that is used for building multi-modal applied machine learning pipelines. The project utilises MediaPipe to obtain the 33 major landmark coordinates of the human body. MediaPipe utilizes BlazePose[1] topology, a superset of COCO[2], BlazeFace[3], and BlazePalm[4] topology. These landmark coordinates form the basis for the pose estimation. The appropriate angles formed by landmarks while performing the asana precisely are compared to the person’s live feed of performingthe asana. The project then provides voice feedback so that the person can make alterations to the pose and avoid misalignment of the body so that the yoga asana can be performed efficiently without developing aches while attaining the numerous benefits of practising yoga.
 So,Using PoseNet we get key points of human limbs. Output of keypoints is (x,y) co-ordinate value. Then using these keypoints we can determine angles of different limb of our body or can use these point in classifier model for human acitivity detection. There are some out performing model for pose estimation like: OpenPose pose estimation model which can also be inferenced in CPU.
 
 
@@ -43,7 +37,6 @@ I prepared the training procedure using UI. By clicking the button we can select
 
 ## Output
 
-open ```index.html``` file from prediction folder. it will open webcam and start predicting!
-
-![Figure](https://github.com/forhadsidhu/Yoga-pose-detection/blob/master/Images/pred.PNG)
-
+<p align="center">
+  <img width="600" height="500" src="https://github.com/Trisha3620/Yoga_pose_Detection/blob/main/Final.png">
+</p>
